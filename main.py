@@ -42,7 +42,7 @@ async def get_answer(query: str) -> str:
                 "messages": [
                     {
                         "role": "system",
-                        "content": f"You are a TypeScript documentation assistant. Answer questions based ONLY on these notes. Be very concise and answer directly with just the key information requested.\n\n{KNOWLEDGE_BASE}"
+                        "content": f"You are a TypeScript documentation assistant. Answer questions based ONLY on these notes. Be very concise and answer directly with just the key information requested.You should only give precise answers(for example: what does the author cal => syntax? Ans: fat arrow. Precisely. Nothing else, just precise answer everytime)\n\n{KNOWLEDGE_BASE}"
                     },
                     {
                         "role": "user",
